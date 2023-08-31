@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>E-Quiz</title>
+</head>
+
+<body>
+
+    <div class="box" id="box">
+        <h1>E-Quiz</h1>
+        <h4 id="question">Are You Ready For the Quiz?</h4>
+        <div class="choise" id="choise">
+            <div class="options"><input type="radio" name="options" id="op1" value="op1"> <label for = "op1" id="o1">No!</label> </div>
+            <div class="options"><input type="radio" name="options" id="op2" value="op2"> <label for = "op2" id="o2">Later!</label> </div>
+            <div class="options"><input type="radio" name="options" id="op3" value="op3"> <label for = "op3" id="o3">Not now!</label> </div>
+            <div class="options"><input type="radio" name="options" id="op4" value="op4"> <label for = "op4" id="o4">Hell Yeah!!!</label>
+            </div>
+        </div>
+
+        <table>
+            <th><div id="button" onclick="getScore()">Score</div></th>
+            <th><div id="button" onclick="submit()">Submit</div></th>
+        </table>
+    </div>
+
+    <div class="win hidden">
+        <h1>You</h1>
+        <h1>Win</h1>
+    </div>
+
+    <div class="lose hidden">
+        <h1>You</h1>
+        <h1>Lose</h1>
+    </div>
+
+    <div class="score">
+        <h1>Score : <span id="score">0</span></h1>
+        <button type="button" id="btn1" onclick="getScore()">Back!</button>
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
